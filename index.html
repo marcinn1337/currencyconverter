@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="app__title">Currency Converter</h1>
+        <div class="wrapper">
+            <input type="number" class="app__input first-input" placeholder='1234,00'>
+            <button class="app__pick-currency-btn btn first-btn">usd</button>
+            <input type="number" class="app__input second-input" placeholder='1234,00'>
+            <button class="app__pick-currency-btn btn second-btn">pln</button>
+            <button class="app__swap-btn btn">Swap</button>
+        </div>
+    </div>
+    <div class="app__currencies">
+        <div class="app__currencies-header">
+            <h2 class="app__currencies-title">Pick a currency</h2>
+            <button class="app__currencies-close-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+        <input type="text" class="app__currencies-search" placeholder="Search by code">
+        <ul class="app__currencies-list">
+            <li class="app__currency hidden">
+                <span class="app__currency-code">pln</span>
+                <span class="app__currency-name">- polish zloty</span>
+            </li>
+            <li class="app__currency hidden">
+                <span class="app__currency-code">usd</span>
+                <span class="app__currency-name">- polish zloty</span>
+            </li>
+            <li class="app__currency hidden">
+                <span class="app__currency-code">eur</span>
+                <span class="app__currency-name">- polish zloty</span>
+            </li>
+            <li class="app__currency hidden">
+                <span class="app__currency-code">rub</span>
+                <span class="app__currency-name">- polish zloty</span>
+            </li>
+            <li class="app__currency hidden">
+                <span class="app__currency-code">gbp</span>
+                <span class="app__currency-name">- polish zloty</span>
+            </li>
+            <li class="app__currency hidden">
+                <span class="app__currency-code">pln</span>
+                <span class="app__currency-name">- polish zloty</span>
+            </li>
+        </ul>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
