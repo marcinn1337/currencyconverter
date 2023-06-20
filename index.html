@@ -15,13 +15,23 @@
 
 <body>
     <div class="app">
-        <h1 class="app__title">Currency Converter</h1>
+        <h1 class="app__title">Currency Converter<button class="app__info-btn">?</button></h1>
         <div class="wrapper">
-            <input type="number" class="app__input first-input" placeholder='1234,00'>
-            <button class="app__pick-currency-btn btn first-btn">usd</button>
-            <input type="number" class="app__input second-input" placeholder='1234,00'>
+            <input type="number" class="app__input first-input" placeholder='0,00'>
+            <button class="app__pick-currency-btn btn first-btn">eur</button>
+            <input type="number" class="app__input second-input" placeholder='0,00'>
             <button class="app__pick-currency-btn btn second-btn">pln</button>
             <button class="app__swap-btn btn">Swap</button>
+        </div>
+        <div class="app__info">
+            <p>To change currency:<br><br> Press button on the right of input and type in search bar the code of
+                currency
+                you
+                are looking for.</p>
+            <a target="blank" href="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json">List
+                of available
+                currencies and cryptocurrencies</a>
+            <a target="blank" href="https://github.com/fawazahmed0/currency-api#readme">API Provided by fawazahmed0</a>
         </div>
     </div>
     <div class="app__currencies">
@@ -34,33 +44,9 @@
         </div>
         <input type="text" class="app__currencies-search" placeholder="Search by code">
         <ul class="app__currencies-list">
-            <li class="app__currency hidden">
-                <span class="app__currency-code">pln</span>
-                <span class="app__currency-name">- polish zloty</span>
-            </li>
-            <li class="app__currency hidden">
-                <span class="app__currency-code">usd</span>
-                <span class="app__currency-name">- polish zloty</span>
-            </li>
-            <li class="app__currency hidden">
-                <span class="app__currency-code">eur</span>
-                <span class="app__currency-name">- polish zloty</span>
-            </li>
-            <li class="app__currency hidden">
-                <span class="app__currency-code">rub</span>
-                <span class="app__currency-name">- polish zloty</span>
-            </li>
-            <li class="app__currency hidden">
-                <span class="app__currency-code">gbp</span>
-                <span class="app__currency-name">- polish zloty</span>
-            </li>
-            <li class="app__currency hidden">
-                <span class="app__currency-code">pln</span>
-                <span class="app__currency-name">- polish zloty</span>
-            </li>
         </ul>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
